@@ -7,6 +7,7 @@ function App() {
     <>
     <BootNavbar/>
     <NewsBoard/>
+    <div className='bg-danger text-light text-center p-5 mt-2'>Copywright &copy;2024 NewsDemo </div>
     </>
   )
 }
