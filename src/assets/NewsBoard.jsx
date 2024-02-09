@@ -7,6 +7,7 @@ const NewsBoard = () => {
     const [error , setError] = useState(true);
     const [loading,setLoading] = useState(false);
     useEffect(() => {
+        setLoading(true);
         setError(false);
         try {
              const Url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=a1c8439291fd49569a93c1793c5027fa';
@@ -34,7 +35,7 @@ const NewsBoard = () => {
         setLoading(false);
     }, [])
     return (
-        <div className="container-fluid m-auto m-lg-0 p-1">
+        <div className="container-fluid m-xl-5 m-lg-0 p-1">
             <h1 className="text-center my-2">Latest <span className="badge bg-dark-subtle">News</span></h1>
             {/* While loading... */}
             {loading && !error && <Loader/>}

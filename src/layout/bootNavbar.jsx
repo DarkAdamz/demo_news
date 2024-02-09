@@ -6,7 +6,7 @@ const bootNavbar = () => {
   return (
     <>
       <Navbar bg="danger" expand="lg" data-bs-theme="dark">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#home"><h2>NEWS <span className='badge bg-light text-dark'>DEMO</span></h2></Navbar.Brand>
            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
